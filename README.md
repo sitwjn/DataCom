@@ -189,6 +189,7 @@ classDiagram
         +IRDDataClient CreateMySqlClient(string host, string dbName, string username, string password, int port)
         +INoSDataClient CreateRedisClient(string host, string password, int port)
         +INoSDataClient CreateCassandraClient(string host, string dbName, string username, string password, int port)
+		+INoSDataClient CreateEtcdClient(string host, string username, string password, int port)
 	}
 	class DataComType { 
 		SqlServer
@@ -199,6 +200,7 @@ classDiagram
 		MySql
 		Redis
 		Cassandra
+		Etcd
 	}
 	<<enumeration>> DataComType
 	IRDDataClient <|.. RDDataClient
