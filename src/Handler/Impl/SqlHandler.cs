@@ -136,28 +136,6 @@ namespace Sitwjn.DataCom
             }
         }
 
-        public void BulkCopyHandle(DBulk bulk)
-        {
-            SqlBulkCopy bulkCopy = new SqlBulkCopy(this.SqlConn);
-            bulkCopy.DestinationTableName = bulk.DestTableName;
-            if (bulk.ColMaps != null)
-            {
-                foreach (var item in bulk.ColMaps)
-                {
-                    bulkCopy.ColumnMappings.Add(item.Key, item.Value);
-                }
-            }
-            if (bulk.BatchSize != null)
-            {
-                bulkCopy.BatchSize = (int)bulk.BatchSize;
-            }
-            if (bulk.TimeOut != null)
-            {
-                bulkCopy.BulkCopyTimeout = (int)bulk.TimeOut;
-            }
-            bulkCopy.WriteToServer(bulk.Dt);
-        }
-
         #endregion
 
         public void InsertHandle<T>(string destName, T[] objs)
