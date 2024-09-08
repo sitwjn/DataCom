@@ -216,7 +216,7 @@ classDiagram
 
 ## Install library from Nuget
 
-The compiled library of DataCom has been uploaded on Nuget plantform for installing online. The commands of package manager for Visual Studio as below:
+The compiled library of [DataCom](https://www.nuget.org/packages/Sitwjn.DataCom) has been uploaded on Nuget plantform for installing online. The commands of package manager for Visual Studio as below:
 
 ``` bash
 Install-Package Sitwjn.DataCom.1.0.0.nupkg
