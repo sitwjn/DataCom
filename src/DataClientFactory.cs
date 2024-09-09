@@ -153,7 +153,7 @@ namespace Sitwjn.DataCom
         /// <summary>
         /// Create Data Client for Etcd
         /// </summary>
-        /// <param name="host">IP address or DNS name of Database server</param>
+        /// <param name="host">URL of Database server</param>
         /// <param name="username">Username</param>
         /// <param name="password">Password</param>
         /// <param name="port">The port number of Database server</param>
